@@ -16,5 +16,10 @@ namespace Proje
         {
             InitializeComponent();
         }
+
+        private void BiletBilgileri_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
