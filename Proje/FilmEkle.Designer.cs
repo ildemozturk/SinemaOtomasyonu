@@ -74,6 +74,7 @@
             this.label3.Size = new System.Drawing.Size(39, 39);
             this.label3.TabIndex = 4;
             this.label3.Text = "X";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // guna2TextBox1
             // 

@@ -16,5 +16,12 @@ namespace Proje
         {
             InitializeComponent();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            FilmEkle anasayfa = new FilmEkle();
+                    anasayfa.Show();
+                    this.Hide();
+        }
     }
 }
