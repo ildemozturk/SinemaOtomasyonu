@@ -109,6 +109,12 @@
     <Compile Include="BiletAl.Designer.cs">
       <DependentUpon>BiletAl.cs</DependentUpon>
     </Compile>
+    <Compile Include="BiletBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletBilgileri.Designer.cs">
+      <DependentUpon>BiletBilgileri.cs</DependentUpon>
+    </Compile>
     <Compile Include="FilmEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BiletAl.resx">
       <DependentUpon>BiletAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletBilgileri.resx">
+      <DependentUpon>BiletBilgileri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FilmEkle.resx">
       <DependentUpon>FilmEkle.cs</DependentUpon>

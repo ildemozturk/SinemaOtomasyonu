@@ -40,6 +40,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -48,7 +49,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(501, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 40);
+            this.label2.Size = new System.Drawing.Size(181, 40);
             this.label2.TabIndex = 5;
             this.label2.Text = "Seans Ekle";
             // 
@@ -201,11 +202,22 @@
             this.button2.Text = "Onayla";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(1226, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(39, 39);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "X";
+            // 
             // SeansEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1277, 649);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker1);
@@ -241,5 +253,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label7;
     }
 }
