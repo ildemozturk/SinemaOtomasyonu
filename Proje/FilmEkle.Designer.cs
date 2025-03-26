@@ -49,11 +49,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(498, 20);
+            this.label1.Location = new System.Drawing.Point(469, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 39);
+            this.label1.Size = new System.Drawing.Size(204, 39);
             this.label1.TabIndex = 2;
-            this.label1.Text = "SİNEMA";
+            this.label1.Text = "CineMekan";
             // 
             // label2
             // 
@@ -61,7 +61,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(498, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 40);
+            this.label2.Size = new System.Drawing.Size(147, 40);
             this.label2.TabIndex = 3;
             this.label2.Text = "Film Ekle";
             // 
