@@ -13,7 +13,7 @@ namespace Proje
         }
 
         // DbContext'i bir kere tanımlayıp, tüm metodlar boyunca kullanabiliriz
-        SinemaOtomasyonEntities db = new SinemaOtomasyonEntities();
+        SinemaOtomasyonEntities1 db = new SinemaOtomasyonEntities1();
 
         private void Form1_Load(object sender, EventArgs e)
         {

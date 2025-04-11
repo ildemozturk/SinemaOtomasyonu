@@ -33,6 +33,7 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -46,6 +47,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnSeans = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -69,7 +71,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.White;
             this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(344, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(255, 12);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(180, 38);
             this.guna2Button1.TabIndex = 2;
@@ -91,11 +93,12 @@
             this.guna2Button2.FillColor = System.Drawing.Color.White;
             this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Location = new System.Drawing.Point(905, 12);
+            this.guna2Button2.Location = new System.Drawing.Point(633, 12);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(180, 38);
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "Bilet Al";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button3
             // 
@@ -112,15 +115,17 @@
             this.guna2Button3.FillColor = System.Drawing.Color.White;
             this.guna2Button3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.Location = new System.Drawing.Point(629, 12);
+            this.guna2Button3.Location = new System.Drawing.Point(447, 12);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(180, 38);
             this.guna2Button3.TabIndex = 4;
             this.guna2Button3.Text = "Seans Ekle";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.guna2Button2);
@@ -131,6 +136,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1140, 59);
             this.panel1.TabIndex = 5;
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.BackColor = System.Drawing.Color.White;
+            this.guna2Button4.BorderRadius = 20;
+            this.guna2Button4.CheckedState.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2Button4.CheckedState.CustomBorderColor = System.Drawing.Color.Maroon;
+            this.guna2Button4.CheckedState.FillColor = System.Drawing.Color.Maroon;
+            this.guna2Button4.CheckedState.ForeColor = System.Drawing.Color.Maroon;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.White;
+            this.guna2Button4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button4.Location = new System.Drawing.Point(830, 12);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(180, 38);
+            this.guna2Button4.TabIndex = 19;
+            this.guna2Button4.Text = "Bilet Bilgileri";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // pictureBox2
             // 
@@ -272,12 +299,25 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "SENDEN ÖNCE BEN";
             // 
+            // btnSeans
+            // 
+            this.btnSeans.BackColor = System.Drawing.Color.DarkGray;
+            this.btnSeans.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSeans.Location = new System.Drawing.Point(447, 485);
+            this.btnSeans.Name = "btnSeans";
+            this.btnSeans.Size = new System.Drawing.Size(198, 51);
+            this.btnSeans.TabIndex = 18;
+            this.btnSeans.Text = "Seanslar";
+            this.btnSeans.UseVisualStyleBackColor = false;
+            this.btnSeans.Click += new System.EventHandler(this.btnSeans_Click);
+            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(1140, 612);
+            this.Controls.Add(this.btnSeans);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
@@ -325,5 +365,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnSeans;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }

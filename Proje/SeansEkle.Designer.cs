@@ -146,12 +146,6 @@
             this.guna2ComboBox4.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.guna2ComboBox4.ForeColor = System.Drawing.Color.Maroon;
             this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.Items.AddRange(new object[] {
-            "09.00",
-            "12.45",
-            "16.00",
-            "21.30",
-            "00.00"});
             this.guna2ComboBox4.Location = new System.Drawing.Point(875, 208);
             this.guna2ComboBox4.Name = "guna2ComboBox4";
             this.guna2ComboBox4.Size = new System.Drawing.Size(278, 36);
@@ -187,6 +181,7 @@
             this.button4.TabIndex = 19;
             this.button4.Text = "Geri";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -201,6 +196,7 @@
             this.button2.TabIndex = 18;
             this.button2.Text = "Onayla";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -211,6 +207,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SeansEkle
             // 
@@ -234,6 +231,7 @@
             this.Name = "SeansEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SeansEkle";
+            this.Load += new System.EventHandler(this.SeansEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

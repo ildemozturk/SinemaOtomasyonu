@@ -22,9 +22,16 @@
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="film_adi" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="film_turu" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="film_suresi" Type="int" Nullable="false" />
           <Property Name="film_gorsel" Type="nvarchar" MaxLength="255" />
+          <Property Name="film_turu_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FilmTurleri">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tur_adi" Type="nvarchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="Kullanici">
           <Key>
@@ -105,9 +112,24 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Film_FilmTurleri">
+          <End Role="FilmTurleri" Type="Self.FilmTurleri" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Film" Type="Self.Film" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FilmTurleri">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Film">
+              <PropertyRef Name="film_turu_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="SinemaOtomasyonModelStoreContainer">
           <EntitySet Name="Bilet" EntityType="Self.Bilet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Film" EntityType="Self.Film" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FilmTurleri" EntityType="Self.FilmTurleri" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Salon" EntityType="Self.Salon" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Seans" EntityType="Self.Seans" Schema="dbo" store:Type="Tables" />
@@ -123,6 +145,10 @@
           <AssociationSet Name="FK__Seans__salon_id__4222D4EF" Association="Self.FK__Seans__salon_id__4222D4EF">
             <End Role="Salon" EntitySet="Salon" />
             <End Role="Seans" EntitySet="Seans" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Film_FilmTurleri" Association="Self.FK_Film_FilmTurleri">
+            <End Role="FilmTurleri" EntitySet="FilmTurleri" />
+            <End Role="Film" EntitySet="Film" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -148,10 +174,19 @@
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="film_adi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="film_turu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="film_suresi" Type="Int32" Nullable="false" />
           <Property Name="film_gorsel" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="film_turu_id" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Seans" Relationship="Self.FK__Seans__film_id__412EB0B6" FromRole="Film" ToRole="Seans" />
+          <NavigationProperty Name="FilmTurleri" Relationship="Self.FK_Film_FilmTurleri" FromRole="Film" ToRole="FilmTurleri" />
+        </EntityType>
+        <EntityType Name="FilmTurleri">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tur_adi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Film" Relationship="Self.FK_Film_FilmTurleri" FromRole="FilmTurleri" ToRole="Film" />
         </EntityType>
         <EntityType Name="Kullanici">
           <Key>
@@ -222,6 +257,20 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Film_FilmTurleri">
+          <End Role="FilmTurleri" Type="Self.FilmTurleri" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Film" Type="Self.Film" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FilmTurleri">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Film">
+              <PropertyRef Name="film_turu_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__Seans__salon_id__4222D4EF">
           <End Role="Salon" Type="Self.Salon" Multiplicity="1">
             <OnDelete Action="Cascade" />
@@ -236,9 +285,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SinemaOtomasyonEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="SinemaOtomasyonEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Bilet" EntityType="Self.Bilet" />
           <EntitySet Name="Film" EntityType="Self.Film" />
+          <EntitySet Name="FilmTurleri" EntityType="Self.FilmTurleri" />
           <EntitySet Name="Kullanici" EntityType="Self.Kullanici" />
           <EntitySet Name="Salon" EntityType="Self.Salon" />
           <EntitySet Name="Seans" EntityType="Self.Seans" />
@@ -251,6 +301,10 @@
             <End Role="Film" EntitySet="Film" />
             <End Role="Seans" EntitySet="Seans" />
           </AssociationSet>
+          <AssociationSet Name="FK_Film_FilmTurleri" Association="Self.FK_Film_FilmTurleri">
+            <End Role="FilmTurleri" EntitySet="FilmTurleri" />
+            <End Role="Film" EntitySet="Film" />
+          </AssociationSet>
           <AssociationSet Name="FK__Seans__salon_id__4222D4EF" Association="Self.FK__Seans__salon_id__4222D4EF">
             <End Role="Salon" EntitySet="Salon" />
             <End Role="Seans" EntitySet="Seans" />
@@ -261,7 +315,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SinemaOtomasyonModelStoreContainer" CdmEntityContainer="SinemaOtomasyonEntities">
+        <EntityContainerMapping StorageEntityContainer="SinemaOtomasyonModelStoreContainer" CdmEntityContainer="SinemaOtomasyonEntities1">
           <EntitySetMapping Name="Bilet">
             <EntityTypeMapping TypeName="SinemaOtomasyonModel.Bilet">
               <MappingFragment StoreEntitySet="Bilet">
@@ -279,9 +333,17 @@
               <MappingFragment StoreEntitySet="Film">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="film_adi" ColumnName="film_adi" />
-                <ScalarProperty Name="film_turu" ColumnName="film_turu" />
                 <ScalarProperty Name="film_suresi" ColumnName="film_suresi" />
                 <ScalarProperty Name="film_gorsel" ColumnName="film_gorsel" />
+                <ScalarProperty Name="film_turu_id" ColumnName="film_turu_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FilmTurleri">
+            <EntityTypeMapping TypeName="SinemaOtomasyonModel.FilmTurleri">
+              <MappingFragment StoreEntitySet="FilmTurleri">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="tur_adi" ColumnName="tur_adi" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

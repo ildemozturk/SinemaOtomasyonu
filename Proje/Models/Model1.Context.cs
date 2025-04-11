@@ -13,10 +13,10 @@ namespace Proje.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SinemaOtomasyonEntities : DbContext
+    public partial class SinemaOtomasyonEntities1 : DbContext
     {
-        public SinemaOtomasyonEntities()
-            : base("name=SinemaOtomasyonEntities")
+        public SinemaOtomasyonEntities1()
+            : base("name=SinemaOtomasyonEntities1")
         {
         }
     
@@ -27,6 +27,7 @@ namespace Proje.Models
     
         public virtual DbSet<Bilet> Bilet { get; set; }
         public virtual DbSet<Film> Film { get; set; }
+        public virtual DbSet<FilmTurleri> FilmTurleri { get; set; }
         public virtual DbSet<Kullanici> Kullanici { get; set; }
         public virtual DbSet<Salon> Salon { get; set; }
         public virtual DbSet<Seans> Seans { get; set; }

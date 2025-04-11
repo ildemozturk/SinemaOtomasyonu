@@ -36,7 +36,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.A4 = new System.Windows.Forms.Button();
@@ -131,6 +130,32 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.pnlBosKoltuk = new System.Windows.Forms.Panel();
+            this.lblBosKoltuk = new System.Windows.Forms.Label();
+            this.pnlDoluKoltuk = new System.Windows.Forms.Panel();
+            this.lblDoluKoltuk = new System.Windows.Forms.Label();
+            this.pnlSecilenKoltuk = new System.Windows.Forms.Panel();
+            this.lblSecilenKoltuk = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.lblBiletSayisi = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblMusteriAdi = new System.Windows.Forms.Label();
+            this.lblSeansBilgisi = new System.Windows.Forms.Label();
+            this.lblSalon = new System.Windows.Forms.Label();
+            this.lblBiletTipi = new System.Windows.Forms.Label();
+            this.lblFilmAdi = new System.Windows.Forms.Label();
+            this.lblKoltukNo = new System.Windows.Forms.Label();
+            this.iptal = new System.Windows.Forms.Button();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -164,16 +189,17 @@
             this.guna2ComboBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.Maroon;
             this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(35, 274);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(35, 346);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(240, 36);
             this.guna2ComboBox1.TabIndex = 12;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(35, 222);
+            this.label5.Location = new System.Drawing.Point(35, 294);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 27);
             this.label5.TabIndex = 11;
@@ -186,6 +212,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(250, 33);
             this.textBox1.TabIndex = 13;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -193,38 +220,19 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(35, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(222, 27);
+            this.label3.Size = new System.Drawing.Size(145, 27);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Müşteri Adı Soyadı";
+            this.label3.Text = "Müşteri Adı ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(397, 131);
+            this.label4.Location = new System.Drawing.Point(328, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 27);
             this.label4.TabIndex = 15;
             this.label4.Text = "Bilet Tipi";
-            // 
-            // guna2ComboBox2
-            // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.White;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.Maroon;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
-            "Öğrenci / 130TL",
-            "Tam / 150TL"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(397, 167);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(240, 36);
-            this.guna2ComboBox2.TabIndex = 16;
             // 
             // guna2ComboBox3
             // 
@@ -237,16 +245,17 @@
             this.guna2ComboBox3.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.guna2ComboBox3.ForeColor = System.Drawing.Color.Maroon;
             this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(35, 360);
+            this.guna2ComboBox3.Location = new System.Drawing.Point(35, 432);
             this.guna2ComboBox3.Name = "guna2ComboBox3";
             this.guna2ComboBox3.Size = new System.Drawing.Size(240, 36);
             this.guna2ComboBox3.TabIndex = 18;
+            this.guna2ComboBox3.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(35, 322);
+            this.label6.Location = new System.Drawing.Point(35, 394);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 27);
             this.label6.TabIndex = 17;
@@ -996,7 +1005,7 @@
             this.button67.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button67.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button67.ForeColor = System.Drawing.Color.White;
-            this.button67.Location = new System.Drawing.Point(1034, 530);
+            this.button67.Location = new System.Drawing.Point(1034, 516);
             this.button67.Name = "button67";
             this.button67.Size = new System.Drawing.Size(117, 51);
             this.button67.TabIndex = 100;
@@ -1010,12 +1019,13 @@
             this.button68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button68.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button68.ForeColor = System.Drawing.Color.White;
-            this.button68.Location = new System.Drawing.Point(873, 530);
+            this.button68.Location = new System.Drawing.Point(873, 516);
             this.button68.Name = "button68";
             this.button68.Size = new System.Drawing.Size(117, 51);
             this.button68.TabIndex = 99;
             this.button68.Text = "Onayla";
             this.button68.UseVisualStyleBackColor = false;
+            this.button68.Click += new System.EventHandler(this.button68_Click);
             // 
             // label7
             // 
@@ -1026,6 +1036,7 @@
             this.label7.Size = new System.Drawing.Size(39, 39);
             this.label7.TabIndex = 101;
             this.label7.Text = "X";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textBox2
             // 
@@ -1198,16 +1209,17 @@
             this.guna2ComboBox4.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.guna2ComboBox4.ForeColor = System.Drawing.Color.Maroon;
             this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.Location = new System.Drawing.Point(30, 459);
+            this.guna2ComboBox4.Location = new System.Drawing.Point(30, 531);
             this.guna2ComboBox4.Name = "guna2ComboBox4";
             this.guna2ComboBox4.Size = new System.Drawing.Size(240, 36);
             this.guna2ComboBox4.TabIndex = 119;
+            this.guna2ComboBox4.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox4_SelectedIndexChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(30, 421);
+            this.label8.Location = new System.Drawing.Point(30, 493);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 27);
             this.label8.TabIndex = 118;
@@ -1217,7 +1229,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(397, 222);
+            this.label9.Location = new System.Drawing.Point(328, 341);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(128, 27);
             this.label9.TabIndex = 120;
@@ -1227,7 +1239,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            this.label10.Location = new System.Drawing.Point(402, 274);
+            this.label10.Location = new System.Drawing.Point(333, 393);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 21);
             this.label10.TabIndex = 121;
@@ -1237,7 +1249,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            this.label11.Location = new System.Drawing.Point(402, 374);
+            this.label11.Location = new System.Drawing.Point(333, 493);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 21);
             this.label11.TabIndex = 123;
@@ -1247,17 +1259,256 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(397, 322);
+            this.label12.Location = new System.Drawing.Point(328, 441);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(198, 27);
             this.label12.TabIndex = 122;
             this.label12.Text = "Seçilen Koltuklar";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(35, 218);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(177, 27);
+            this.label13.TabIndex = 125;
+            this.label13.Text = "Müşteri Soyadı";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(35, 258);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(250, 33);
+            this.textBox18.TabIndex = 124;
+            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
+            // 
+            // pnlBosKoltuk
+            // 
+            this.pnlBosKoltuk.BackColor = System.Drawing.Color.White;
+            this.pnlBosKoltuk.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBosKoltuk.Location = new System.Drawing.Point(672, 521);
+            this.pnlBosKoltuk.Name = "pnlBosKoltuk";
+            this.pnlBosKoltuk.Size = new System.Drawing.Size(20, 20);
+            this.pnlBosKoltuk.TabIndex = 0;
+            // 
+            // lblBosKoltuk
+            // 
+            this.lblBosKoltuk.AutoSize = true;
+            this.lblBosKoltuk.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblBosKoltuk.Location = new System.Drawing.Point(699, 520);
+            this.lblBosKoltuk.Name = "lblBosKoltuk";
+            this.lblBosKoltuk.Size = new System.Drawing.Size(93, 21);
+            this.lblBosKoltuk.TabIndex = 1;
+            this.lblBosKoltuk.Text = "Boş Koltuk";
+            // 
+            // pnlDoluKoltuk
+            // 
+            this.pnlDoluKoltuk.BackColor = System.Drawing.Color.Green;
+            this.pnlDoluKoltuk.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlDoluKoltuk.Location = new System.Drawing.Point(672, 547);
+            this.pnlDoluKoltuk.Name = "pnlDoluKoltuk";
+            this.pnlDoluKoltuk.Size = new System.Drawing.Size(20, 20);
+            this.pnlDoluKoltuk.TabIndex = 2;
+            // 
+            // lblDoluKoltuk
+            // 
+            this.lblDoluKoltuk.AutoSize = true;
+            this.lblDoluKoltuk.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblDoluKoltuk.Location = new System.Drawing.Point(698, 546);
+            this.lblDoluKoltuk.Name = "lblDoluKoltuk";
+            this.lblDoluKoltuk.Size = new System.Drawing.Size(102, 21);
+            this.lblDoluKoltuk.TabIndex = 3;
+            this.lblDoluKoltuk.Text = "Dolu Koltuk";
+            // 
+            // pnlSecilenKoltuk
+            // 
+            this.pnlSecilenKoltuk.BackColor = System.Drawing.Color.Red;
+            this.pnlSecilenKoltuk.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSecilenKoltuk.Location = new System.Drawing.Point(672, 573);
+            this.pnlSecilenKoltuk.Name = "pnlSecilenKoltuk";
+            this.pnlSecilenKoltuk.Size = new System.Drawing.Size(20, 20);
+            this.pnlSecilenKoltuk.TabIndex = 4;
+            // 
+            // lblSecilenKoltuk
+            // 
+            this.lblSecilenKoltuk.AutoSize = true;
+            this.lblSecilenKoltuk.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblSecilenKoltuk.Location = new System.Drawing.Point(699, 572);
+            this.lblSecilenKoltuk.Name = "lblSecilenKoltuk";
+            this.lblSecilenKoltuk.Size = new System.Drawing.Size(122, 21);
+            this.lblSecilenKoltuk.TabIndex = 5;
+            this.lblSecilenKoltuk.Text = "Seçilen Koltuk";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(337, 172);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(154, 22);
+            this.numericUpDown1.TabIndex = 128;
+            // 
+            // lblBiletSayisi
+            // 
+            this.lblBiletSayisi.AutoSize = true;
+            this.lblBiletSayisi.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBiletSayisi.Location = new System.Drawing.Point(333, 137);
+            this.lblBiletSayisi.Name = "lblBiletSayisi";
+            this.lblBiletSayisi.Size = new System.Drawing.Size(232, 25);
+            this.lblBiletSayisi.TabIndex = 129;
+            this.lblBiletSayisi.Text = "Alınacak Bilet Sayısı:";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(450, 284);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(76, 22);
+            this.numericUpDown2.TabIndex = 130;
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(333, 284);
+            this.numericUpDown3.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(85, 22);
+            this.numericUpDown3.TabIndex = 131;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(333, 258);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(96, 21);
+            this.label14.TabIndex = 132;
+            this.label14.Text = "Tam Sayısı ";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(446, 260);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(127, 21);
+            this.label15.TabIndex = 133;
+            this.label15.Text = "Öğrenci Sayısı ";
+            // 
+            // lblMusteriAdi
+            // 
+            this.lblMusteriAdi.AutoSize = true;
+            this.lblMusteriAdi.Location = new System.Drawing.Point(150, 50);
+            this.lblMusteriAdi.Name = "lblMusteriAdi";
+            this.lblMusteriAdi.Size = new System.Drawing.Size(0, 16);
+            this.lblMusteriAdi.TabIndex = 8;
+            // 
+            // lblSeansBilgisi
+            // 
+            this.lblSeansBilgisi.AutoSize = true;
+            this.lblSeansBilgisi.Location = new System.Drawing.Point(150, 80);
+            this.lblSeansBilgisi.Name = "lblSeansBilgisi";
+            this.lblSeansBilgisi.Size = new System.Drawing.Size(0, 16);
+            this.lblSeansBilgisi.TabIndex = 9;
+            // 
+            // lblSalon
+            // 
+            this.lblSalon.AutoSize = true;
+            this.lblSalon.Location = new System.Drawing.Point(150, 110);
+            this.lblSalon.Name = "lblSalon";
+            this.lblSalon.Size = new System.Drawing.Size(0, 16);
+            this.lblSalon.TabIndex = 10;
+            // 
+            // lblBiletTipi
+            // 
+            this.lblBiletTipi.AutoSize = true;
+            this.lblBiletTipi.Location = new System.Drawing.Point(150, 140);
+            this.lblBiletTipi.Name = "lblBiletTipi";
+            this.lblBiletTipi.Size = new System.Drawing.Size(0, 16);
+            this.lblBiletTipi.TabIndex = 11;
+            // 
+            // lblFilmAdi
+            // 
+            this.lblFilmAdi.AutoSize = true;
+            this.lblFilmAdi.Location = new System.Drawing.Point(150, 170);
+            this.lblFilmAdi.Name = "lblFilmAdi";
+            this.lblFilmAdi.Size = new System.Drawing.Size(0, 16);
+            this.lblFilmAdi.TabIndex = 16;
+            // 
+            // lblKoltukNo
+            // 
+            this.lblKoltukNo.AutoSize = true;
+            this.lblKoltukNo.Location = new System.Drawing.Point(150, 200);
+            this.lblKoltukNo.Name = "lblKoltukNo";
+            this.lblKoltukNo.Size = new System.Drawing.Size(0, 16);
+            this.lblKoltukNo.TabIndex = 12;
+            // 
+            // iptal
+            // 
+            this.iptal.BackColor = System.Drawing.Color.Maroon;
+            this.iptal.FlatAppearance.BorderSize = 0;
+            this.iptal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.iptal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.iptal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iptal.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.iptal.ForeColor = System.Drawing.Color.White;
+            this.iptal.Location = new System.Drawing.Point(1063, 591);
+            this.iptal.Name = "iptal";
+            this.iptal.Size = new System.Drawing.Size(88, 46);
+            this.iptal.TabIndex = 0;
+            this.iptal.Text = "İptal";
+            this.iptal.UseVisualStyleBackColor = false;
+            this.iptal.Click += new System.EventHandler(this.iptal_Click);
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(936, 598);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(100, 22);
+            this.textBox19.TabIndex = 135;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(847, 599);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(83, 18);
+            this.label16.TabIndex = 136;
+            this.label16.Text = "Bilet İptal :";
             // 
             // BiletAl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1240, 649);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.iptal);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.pnlBosKoltuk);
+            this.Controls.Add(this.lblBosKoltuk);
+            this.Controls.Add(this.pnlDoluKoltuk);
+            this.Controls.Add(this.lblDoluKoltuk);
+            this.Controls.Add(this.pnlSecilenKoltuk);
+            this.Controls.Add(this.lblSecilenKoltuk);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.textBox18);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
@@ -1352,7 +1603,6 @@
             this.Controls.Add(this.A4);
             this.Controls.Add(this.guna2ComboBox3);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.guna2ComboBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
@@ -1360,11 +1610,22 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.lblBiletSayisi);
+            this.Controls.Add(this.lblMusteriAdi);
+            this.Controls.Add(this.lblSeansBilgisi);
+            this.Controls.Add(this.lblSalon);
+            this.Controls.Add(this.lblBiletTipi);
+            this.Controls.Add(this.lblFilmAdi);
+            this.Controls.Add(this.lblKoltukNo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BiletAl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BiletAl";
             this.Load += new System.EventHandler(this.BiletAl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1379,7 +1640,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button A4;
@@ -1474,5 +1734,28 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Panel pnlBosKoltuk;
+        private System.Windows.Forms.Label lblBosKoltuk;
+        private System.Windows.Forms.Panel pnlDoluKoltuk;
+        private System.Windows.Forms.Label lblDoluKoltuk;
+        private System.Windows.Forms.Panel pnlSecilenKoltuk;
+        private System.Windows.Forms.Label lblSecilenKoltuk;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label lblBiletSayisi;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblMusteriAdi;
+        private System.Windows.Forms.Label lblSeansBilgisi;
+        private System.Windows.Forms.Label lblSalon;
+        private System.Windows.Forms.Label lblBiletTipi;
+        private System.Windows.Forms.Label lblFilmAdi;
+        private System.Windows.Forms.Label lblKoltukNo;
+        private System.Windows.Forms.Button iptal;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label16;
     }
 }

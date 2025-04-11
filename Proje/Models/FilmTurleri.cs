@@ -12,22 +12,18 @@ namespace Proje.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Film
+    public partial class FilmTurleri
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Film()
+        public FilmTurleri()
         {
-            this.Seans = new HashSet<Seans>();
+            this.Film = new HashSet<Film>();
         }
     
         public int id { get; set; }
-        public string film_adi { get; set; }
-        public int film_suresi { get; set; }
-        public string film_gorsel { get; set; }
-        public int film_turu_id { get; set; }
+        public string tur_adi { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Seans> Seans { get; set; }
-        public virtual FilmTurleri FilmTurleri { get; set; }
+        public virtual ICollection<Film> Film { get; set; }
     }
 }

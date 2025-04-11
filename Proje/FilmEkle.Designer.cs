@@ -30,18 +30,20 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.filmAdi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.filmTur = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.filmSure = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.fotoDow = new System.Windows.Forms.Button();
+            this.btnFilmAdd = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,32 +67,32 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Film Ekle";
             // 
-            // guna2TextBox1
+            // filmAdi
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.White;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(63, 181);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(344, 52);
-            this.guna2TextBox1.TabIndex = 5;
+            this.filmAdi.BackColor = System.Drawing.Color.White;
+            this.filmAdi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.filmAdi.DefaultText = "";
+            this.filmAdi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.filmAdi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.filmAdi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.filmAdi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.filmAdi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.filmAdi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.filmAdi.ForeColor = System.Drawing.Color.Maroon;
+            this.filmAdi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.filmAdi.Location = new System.Drawing.Point(779, 146);
+            this.filmAdi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.filmAdi.Name = "filmAdi";
+            this.filmAdi.PlaceholderText = "";
+            this.filmAdi.SelectedText = "";
+            this.filmAdi.Size = new System.Drawing.Size(344, 52);
+            this.filmAdi.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(58, 139);
+            this.label4.Location = new System.Drawing.Point(774, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 27);
             this.label4.TabIndex = 6;
@@ -100,111 +102,92 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(58, 291);
+            this.label5.Location = new System.Drawing.Point(774, 256);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 27);
             this.label5.TabIndex = 7;
             this.label5.Text = "Filmin Türü";
             // 
-            // guna2ComboBox1
+            // filmTur
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.White;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Aksiyon",
-            "Animasyon",
-            "Belgesel",
-            "Bilim Kurgu",
-            "Dram",
-            "Fantastik",
-            "Gerilim",
-            "Komedi",
-            "Korku",
-            "Macera",
-            "Müzikal",
-            "Polisiye",
-            "Romantik",
-            "Savaş",
-            "Suç ",
-            "Spor",
-            "Tarih",
-            "Vahşi Batı (Western)"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(63, 344);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(344, 36);
-            this.guna2ComboBox1.TabIndex = 8;
+            this.filmTur.BackColor = System.Drawing.Color.Transparent;
+            this.filmTur.BorderColor = System.Drawing.Color.White;
+            this.filmTur.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.filmTur.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.filmTur.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.filmTur.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.filmTur.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.filmTur.ForeColor = System.Drawing.Color.Maroon;
+            this.filmTur.ItemHeight = 30;
+            this.filmTur.Location = new System.Drawing.Point(779, 309);
+            this.filmTur.Name = "filmTur";
+            this.filmTur.Size = new System.Drawing.Size(344, 36);
+            this.filmTur.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(58, 443);
+            this.label6.Location = new System.Drawing.Point(774, 408);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(145, 27);
             this.label6.TabIndex = 10;
             this.label6.Text = "Filmin Süresi";
             // 
-            // guna2TextBox2
+            // filmSure
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Maroon;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(63, 485);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(344, 52);
-            this.guna2TextBox2.TabIndex = 9;
+            this.filmSure.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.filmSure.DefaultText = "";
+            this.filmSure.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.filmSure.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.filmSure.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.filmSure.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.filmSure.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.filmSure.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.filmSure.ForeColor = System.Drawing.Color.Maroon;
+            this.filmSure.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.filmSure.Location = new System.Drawing.Point(779, 450);
+            this.filmSure.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.filmSure.Name = "filmSure";
+            this.filmSure.PlaceholderText = "";
+            this.filmSure.SelectedText = "";
+            this.filmSure.Size = new System.Drawing.Size(344, 52);
+            this.filmSure.TabIndex = 9;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(591, 132);
+            this.pictureBox1.Location = new System.Drawing.Point(49, 129);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(574, 474);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button1
+            // fotoDow
             // 
-            this.button1.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(591, 612);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(574, 45);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Fotoğraf Yükleyiniz";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.fotoDow.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.fotoDow.Location = new System.Drawing.Point(49, 609);
+            this.fotoDow.Name = "fotoDow";
+            this.fotoDow.Size = new System.Drawing.Size(574, 45);
+            this.fotoDow.TabIndex = 13;
+            this.fotoDow.Text = "Fotoğraf Yükleyiniz";
+            this.fotoDow.UseVisualStyleBackColor = true;
+            this.fotoDow.Click += new System.EventHandler(this.fotoDow_Click);
             // 
-            // button2
+            // btnFilmAdd
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(63, 605);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 51);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Ekle";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnFilmAdd.BackColor = System.Drawing.Color.Maroon;
+            this.btnFilmAdd.FlatAppearance.BorderSize = 0;
+            this.btnFilmAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFilmAdd.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnFilmAdd.ForeColor = System.Drawing.Color.White;
+            this.btnFilmAdd.Location = new System.Drawing.Point(779, 570);
+            this.btnFilmAdd.Name = "btnFilmAdd";
+            this.btnFilmAdd.Size = new System.Drawing.Size(117, 51);
+            this.btnFilmAdd.TabIndex = 14;
+            this.btnFilmAdd.Text = "Ekle";
+            this.btnFilmAdd.UseVisualStyleBackColor = false;
+            this.btnFilmAdd.Click += new System.EventHandler(this.btnFilmAdd_Click);
             // 
             // button3
             // 
@@ -213,26 +196,28 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(357, 605);
+            this.button3.Location = new System.Drawing.Point(1073, 570);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(117, 51);
             this.button3.TabIndex = 15;
             this.button3.Text = "Geri";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // delete
             // 
-            this.button4.BackColor = System.Drawing.Color.Maroon;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(206, 605);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 51);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Sil";
-            this.button4.UseVisualStyleBackColor = false;
+            this.delete.BackColor = System.Drawing.Color.Maroon;
+            this.delete.FlatAppearance.BorderSize = 0;
+            this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.delete.ForeColor = System.Drawing.Color.White;
+            this.delete.Location = new System.Drawing.Point(922, 570);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(117, 51);
+            this.delete.TabIndex = 16;
+            this.delete.Text = "Sil";
+            this.delete.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // button5
             // 
@@ -243,6 +228,25 @@
             this.button5.TabIndex = 21;
             this.button5.Text = "X";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(918, 520);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 19);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Film İd:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(922, 542);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 24;
             // 
             // FilmEkle
             // 
@@ -250,24 +254,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1258, 696);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnFilmAdd);
+            this.Controls.Add(this.fotoDow);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.filmSure);
+            this.Controls.Add(this.filmTur);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.filmAdi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FilmEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FilmEkle";
+            this.Load += new System.EventHandler(this.FilmEkle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -278,17 +285,20 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox filmAdi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox filmTur;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox filmSure;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button fotoDow;
+        private System.Windows.Forms.Button btnFilmAdd;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
